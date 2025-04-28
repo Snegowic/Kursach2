@@ -1,0 +1,231 @@
+.prod {
+    padding: 50px 0;
+}
+
+.title {
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.df__footer2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 20px;
+}
+
+.prod__df {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.prod__df__flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.prod__df .h {
+    border: 2px solid rgb(83, 83, 83);
+    border-radius: 15px;
+    cursor: pointer;
+    width: 250px;
+    height: 160px;
+}
+
+.prod__df__1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hover {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    cursor: pointer;
+    width: 250px;
+    height: 160px;
+}
+
+.pr__df {
+    display: flex;
+    gap: 30px;
+}
+
+.pos {
+    position: relative;
+}
+
+.prod__df__2 {
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.price input {
+    font-size: 20px;
+}
+
+.prod__df__2 img {
+    width: 400px;
+}
+
+.prod__df__3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.prod__df__3 input {
+    width: 100%;
+}
+
+.prod__df__3__title {
+    font-size: 36px;
+}
+
+.prod__df__3__desc {
+    font-size: 24px;
+    color: #494949;
+}
+
+.prod__df__3__desc span {
+    color: black;
+}
+
+.prod__df__3__desc__2 {
+    color: black;
+    font-size: 24px;
+}
+
+.pord__btn__1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    border-radius: 15px;
+    margin-top: 35px;
+    transition: .5s;
+}
+
+.pord__btn__1:hover {
+    background-color: #fff;
+    color: black;
+    transition: .5s;
+}
+
+.pord__btn__2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    border: 1px solid black;
+    background-color: #fff;
+    color: black;
+    border-radius: 15px;
+    transition: .5s;
+}
+
+.pord__btn__2:hover {
+    background-color: black;
+    color: white;
+    transition: .5s;
+}
+
+.price {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    margin-bottom: 75px;
+    margin-top: 30px;
+}
+
+.price__1 {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.price__2 {
+    font-weight: 200;
+    color: #494949;
+    font-size: 32px;
+    margin-left: 10px;
+    text-decoration: line-through;
+}
+
+
+@media screen and (max-width:1240px) {
+    .prod__df__flex {
+        margin-left: 50px;
+    }
+
+    .prod__df {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .prod__df__3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .prod__df__3__title {
+        margin-right: 250px;
+    }
+
+    .title {
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .dn-2 {
+        display: none;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .pr__df {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .prod__df__1 {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+    }
+
+    .prod__df__2 {
+        width: 90%;
+    }
+
+    .prod__df__flex {
+        margin-left: 10px;
+    }
+
+    .title {
+        margin-left: 10px;
+        margin-top: 50px;
+    }
+}

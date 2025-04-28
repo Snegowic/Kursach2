@@ -1,0 +1,133 @@
+
+    .fon__reg {
+        background-color: black;
+        padding: 100px 0;
+    }
+    
+    .obr {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        margin-bottom: 10px;
+    }
+    
+    .block__registr {
+        position: relative;
+        height: 100vh;
+    }
+    
+    .block__registr .block__reg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 5px;
+        margin: 100px 0;
+    }
+    
+    .reg__df__flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .btn__reg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+    
+    .avtor__btn {
+        color: black;
+        padding: 7px 32px;
+        font-size: 24px;
+        background-color: #fff;
+        border-radius: 5px;
+        font-weight: 700;
+        box-shadow: 0 0 10px 1px white;
+        border: 2px solid white;
+        margin-bottom: 30px;
+    }
+    
+    .reg__btn {
+        font-weight: 700;
+        font-size: 24px;
+        padding: 7px 10px;
+        background-color: black;
+        border: 2px solid white;
+        color: white;
+        border-radius: 5px;
+        margin-bottom: 30px;
+    }
+    
+    .desc__4 {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        margin: 0 80px;
+    }
+    
+    .desc__4 input {
+        height: 50px;
+        width: 477px;
+    }
+    
+    .text__4 {
+        font-size: 24px;
+        font-weight: 200;
+        color: white;
+        margin-top: 10px;
+    }
+    
+    .password {
+        position: relative;
+    }
+    
+    .password img {
+        position: absolute;
+        top: 49px;
+        right: 15px;
+    }
+    
+    .reg__btn__3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #C99A42;
+        width: 477px;
+        margin-top: 23px;
+        padding: 12px 0;
+        font-size: 24px;
+        color: black;
+        font-weight: 700;
+    }
+    
+    .or {
+        font-size: 15px;
+        margin: 25px 0;
+    }
+    
+    .br_100 {
+        border-radius: 100%;
+    }
+    
+    .br_5 {
+        border-radius: 15px;
+    }
+    
+    .desc_33 {
+        margin: 25px 0;
+        font-weight: 200;
+        font-size: 12px;
+        width: 274px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.437);
+    }

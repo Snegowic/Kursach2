@@ -1,0 +1,145 @@
+/* Базовые стили (Mobile First) */
+.banner {
+    background: url(../image/banner/car.jpg) center/cover no-repeat;
+    width: 100%;
+    height: 70vh;
+    min-height: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.banner__title {
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.banner__btn__bootom {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease;
+}
+
+.banner__btn__bootom:hover {
+    bottom: 40px;
+}
+
+.banner__btn__bootom img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Планшеты (768px и выше) */
+@media screen and (min-width: 768px) {
+    .banner {
+        height: 70vh;
+        min-height: 500px;
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+        text-align: left;
+    }
+    
+    .banner__title {
+        font-size: 2rem;
+        text-align: left;
+        width: 80%;
+    }
+}
+
+/* Ноутбуки (992px и выше) */
+@media screen and (min-width: 992px) {
+    .banner {
+        height: 80vh;
+        min-height: 600px;
+        background-image: url(../image/banner/car.jpg);
+    }
+    
+    h1 {
+        font-size: 4.5rem;
+        padding-top: 15vh;
+    }
+    
+    .banner__title {
+        font-size: 2.5rem;
+        width: 70%;
+    }
+    
+    .banner__btn__bootom img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* Большие экраны (1200px и выше) */
+@media screen and (min-width: 1200px) {
+    .banner {
+        background-image: url(../image/banner/car.jpg);
+    }
+    
+    h1 {
+        font-size: 5.5rem;
+    }
+    
+    .banner__title {
+        font-size: 3rem;
+        width: 60%;
+    }
+}
+
+/* Очень большие экраны (1440px и выше) */
+@media screen and (min-width: 1440px) {
+    .banner {
+        height: 90vh;
+        max-height: 1400px;
+        background-image: url(../image/banner/car.jpg);
+    }
+    
+    h1 {
+        font-size: 86px;
+        padding-top: 25vh;
+        padding-left: 50px;
+    }
+    
+    .banner__title {
+        padding-left: 50px;
+        width: 790px;
+        font-size: 64px;
+        margin-top: 10px;
+    }
+    
+    .banner__btn__bootom {
+        bottom: 100px;
+    }
+    
+    .banner__btn__bootom:hover {
+        bottom: 80px;
+    }
+    
+    .banner__btn__bootom img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Оптимизация для очень высоких экранов */
+@media screen and (min-width: 1920px) {
+    .banner {
+        max-height: 1080px;
+    }
+}

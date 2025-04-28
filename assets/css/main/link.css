@@ -1,0 +1,61 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: rgba(255, 255, 255, 0.568);
+    font-size: 20px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+nav a:hover {
+    color: white;
+    transition: .5s;
+}
+
+.full__tovars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+}
+
+.menu a {
+    color: rgba(255, 255, 255, 0.568);
+    font-size: 20px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+.menu a:hover {
+    color: white;
+    transition: .5s;
+}
+
+.gorod {
+    color: white;
+    cursor: pointer;
+}
+
+.tel {
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width:790px) {
+    .menu a{
+        font-size: 10px;
+    } 
+}

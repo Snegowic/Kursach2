@@ -1,0 +1,63 @@
+/* Блоки по отдельности */
+@import url(../css/main/header.css);
+@import url(../css/banner.css);
+@import url(../css/main/catalog.css);
+@import url(../css/main/adv.css);
+@import url(../css/main/rewiev.css);
+@import url(../css/main/about.css);
+@import url(../css/about.css);
+@import url(../css/feetback.css);
+@import url(../css/main/footer.css);
+
+/* Кнопки и ссылки */
+@import url(../css/main/link.css);
+@import url(../css/main/btn.css);
+@import url(../css/main/input.css);
+
+/* Страницы */
+@import url(../css/main/admin.css);
+@import url(../css/main/login.css);
+@import url(../css/main/profile.css);
+@import url(../css/main/registr.css);
+@import url(../css/main/product.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Roboto";
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Montserrat-Black.ttf);
+    font-weight: 900;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Montserrat-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Montserrat-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Montserrat-Light.ttf);
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Montserrat-Thin.ttf);
+    font-weight: 100;
+}

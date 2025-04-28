@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>БУМАвто</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="shortcut icon" href="../assets/image/header/logo.svg" type="image/x-icon">
+</head>
+
+<body class="body">
+    <aside class="sidebar">
+        <div class="logo">
+            <a href="../index.html"><img src="../assets/image/header/logo.svg" alt="БУМАвто"></a>
+            <h2>БУМАвто</h2>
+        </div>
+        <ul class="nav__menu">
+            <li class="nav__item">
+                <a href="#" class="nav__link active">
+                    <i class="fas fa__tachometer__alt"></i>
+                    <span>Главная</span>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="#" class="nav__link">
+                    <i class="fas fa__car"></i>
+                    <span>Автомобили</span>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="#" class="nav__link">
+                    <i class="fas fa__users"></i>
+                    <span>Клиенты</span>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="#" class="nav__link">
+                    <i class="fas fa__file__invoice__dollar"></i>
+                    <span>Заказы</span>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="#" class="nav__link">
+                    <i class="fas fa__chart__line"></i>
+                    <span>Аналитика</span>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="#" class="nav__link">
+                    <i class="fas fa__cog"></i>
+                    <span>Настройки</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <main class="main__content">
+        <header class="header__admin">
+            <h1>Админ-панель</h1>
+            <div class="user__info">
+                <span>Администратор</span>
+            </div>
+        </header>
+
+        <div class="stats__cards">
+            <div class="card">
+                <div class="card__header">
+                    <h3>Пользователи</h3>
+                    <div class="card__icon users">
+                        <i class="fas fa__users"></i>
+                    </div>
+                </div>
+                <div class="card__value">1,254</div>
+                <div class="card__title">Зарегистрировано</div>
+            </div>
+            <div class="card">
+                <div class="card__header">
+                    <h3>Автомобили</h3>
+                    <div class="card__icon cars">
+                        <i class="fas fa__car"></i>
+                    </div>
+                </div>
+                <div class="card__value">287</div>
+                <div class="card__title">В каталоге</div>
+            </div>
+            <div class="card">
+                <div class="card__header">
+                    <h3>Продажи</h3>
+                    <div class="card__icon sales">
+                        <i class="fas fa__shopping__cart"></i>
+                    </div>
+                </div>
+                <div class="card__value">156</div>
+                <div class="card__title">За этот месяц</div>
+            </div>
+            <div class="card">
+                <div class="card__header">
+                    <h3>Доход</h3>
+                    <div class="card__icon revenue">
+                        <i class="fas fa__wallet"></i>
+                    </div>
+                </div>
+                <div class="card__value">12.5M ₽</div>
+                <div class="card__title">За этот месяц</div>
+            </div>
+        </div>
+
+        <div class="table__container">
+            <h2>Последние заказы</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Клиент</th>
+                        <th>Автомобиль</th>
+                        <th>Дата</th>
+                        <th>Сумма</th>
+                        <th>Статус</th>
+                        <th>Действия</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#1254</td>
+                        <td>Иван Иванов</td>
+                        <td>HAVAL JOLION</td>
+                        <td>27.04.2025</td>
+                        <td>2,369,000 ₽</td>
+                        <td><span class="status active">Завершен</span></td>
+                        <td>
+                            <button class="btn btn__primary btn__sm">Просмотр</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#1253</td>
+                        <td>Петр Петров</td>
+                        <td>Kia Rio</td>
+                        <td>26.04.2025</td>
+                        <td>1,250,000 ₽</td>
+                        <td><span class="status pending">В обработке</span></td>
+                        <td>
+                            <button class="btn btn__primary btn__sm">Просмотр</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#1252</td>
+                        <td>Сергей Сергеев</td>
+                        <td>Hyundai Solaris</td>
+                        <td>25.04.2025</td>
+                        <td>1,150,000 ₽</td>
+                        <td><span class="status canceled">Отменен</span></td>
+                        <td>
+                            <button class="btn btn__primary btn__sm">Просмотр</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table__container">
+            <h2>Добавить автомобиль</h2>
+            <form>
+                <div class="form__group">
+                    <label for="car__model">Модель</label>
+                    <input type="text" id="car__model" class="form__control" placeholder="HAVAL JOLION">
+                </div>
+                <div class="form__group">
+                    <label for="car__year">Год выпуска</label>
+                    <input type="number" id="car__year" class="form__control" placeholder="2023">
+                </div>
+                <div class="form__group">
+                    <label for="car__price">Цена (₽)</label>
+                    <input type="number" id="car__price" class="form__control" placeholder="2369000">
+                </div>
+                <div class="form__group">
+                    <label for="car__image">Изображение</label>
+                    <input type="file" id="car__image" class="form__control">
+                </div>
+                <button type="submit" class="btn btn__primary">Добавить автомобиль</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

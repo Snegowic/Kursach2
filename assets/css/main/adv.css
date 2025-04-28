@@ -1,0 +1,168 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    padding: 10px 0;
+}
+
+/* Секция "О компании" */
+.adv-header {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+    url('assets/image/about-bg.jpg') center/cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.adv-header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Основной контент */
+.adv-content {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Особенности компании */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.feature-card {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* История компании */
+.history-timeline {
+    position: relative;
+    padding: 50px 0;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.timeline-year {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    min-width: 120px;
+}
+
+.timeline-content {
+    border-left: 3px solid ;
+    padding-left: 30px;
+    margin-left: 30px;
+}
+
+/* Команда */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.member-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    object-fit: cover;
+}
+
+/* Таблица с контактами */
+.company-info {
+    margin-top: 80px;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.info-table th, .info-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.info-table th {
+    background-color: #f5f5f5;
+    color: #FF6B00;
+    font-weight: 600;
+}
+
+.info-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .adv-header h1 {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .timeline-content {
+        border-left: none;
+        padding-left: 0;
+        margin-left: 0;
+        padding-top: 15px;
+    }
+
+    .company-info {
+        padding: 20px;
+    }
+    
+    .info-table {
+        display: block;
+        overflow-x: auto;
+    }
+}

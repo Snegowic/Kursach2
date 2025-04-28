@@ -1,0 +1,18 @@
+@media screen and (min-width:1440px) { 
+    .feetback .input{
+        width: 480px;
+        border-radius: 15px;
+        padding: 20px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width:1440px) { 
+    .feetback .input{
+        width: 460px;
+        border-radius: 15px;
+        padding: 20px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+}

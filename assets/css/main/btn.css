@@ -1,0 +1,139 @@
+/* Базовые стили кнопок (Mobile First) */
+.cat__btn, .feet__btn, .admin__btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 400;
+    border: 1px solid;
+}
+
+/* Кнопка каталога */
+.cat__btn {
+    padding: 8px 12px;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    border-color: black;
+}
+
+.cat__btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Кнопка обратной связи */
+.feet__btn {
+    color: black;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border-color: black;
+    background-color: #FF9000;
+}
+
+.feet__btn:hover {
+    background-color: black;
+    color: #FF9000;
+}
+
+/* Админ-кнопка */
+.admin__btn {
+    color: black;
+    background-color: #FF9000;
+    border-color: black;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    position: static;
+    margin-top: 15px;
+}
+
+/* Планшеты (768px и выше) */
+@media screen and (min-width: 768px) {
+    .cat__btn {
+        padding: 10px 15px;
+        font-size: 1.2rem;
+        border-radius: 10px;
+    }
+    
+    .feet__btn {
+        font-size: 1.1rem;
+        padding: 12px 18px;
+        border-radius: 10px;
+    }
+    
+    .admin__btn {
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+}
+
+/* Ноутбуки (992px и выше) */
+@media screen and (min-width: 992px) {
+    .cat__btn {
+        padding: 12px 20px;
+        font-size: 1.4rem;
+    }
+    
+    .feet__btn {
+        font-size: 1.3rem;
+        padding: 14px 22px;
+    }
+    
+    .admin__btn {
+        position: absolute;
+        right: 100px;
+        bottom: 20px;
+        font-size: 1.1rem;
+        padding: 10px 16px;
+    }
+}
+
+/* Большие экраны (1200px и выше) */
+@media screen and (min-width: 1200px) {
+    .cat__btn {
+        font-size: 1.6rem;
+        border-radius: 12px;
+    }
+    
+    .feet__btn {
+        font-size: 1.5rem;
+        border-radius: 12px;
+    }
+    
+    .admin__btn {
+        right: 150px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Очень большие экраны (1440px и выше) */
+@media screen and (min-width: 1440px) {
+    .cat__btn {
+        padding: 10px;
+        font-size: 24px;
+        border-radius: 15px;
+    }
+    
+    .feet__btn {
+        font-size: 20px;
+        padding: 15px 20px;
+        border-radius: 15px;
+    }
+    
+    .admin__btn {
+        right: 200px;
+        padding: 10px 15px;
+        border-radius: 15px;
+    }
+}
+
+/* Оптимизация для очень широких экранов */
+@media screen and (min-width: 1600px) {
+    .admin__btn {
+        right: 250px;
+    }
+}

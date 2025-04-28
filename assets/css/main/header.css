@@ -1,0 +1,171 @@
+/* Базовые стили (мобильные first) */
+.h2__title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.mt_100 {
+    margin-top: 50px;
+}
+
+/* Header */
+header {
+    background-color: black;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile img {
+    width: 30px;
+    height: 30px;
+}
+
+.menu__head img{
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+/* Мобильное меню */
+nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    z-index: 1000;
+}
+
+nav.active {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+/* Планшеты (768px и выше) */
+@media screen and (min-width: 768px) {
+    .h2__title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+    
+    nav{
+        display: none;
+    }
+
+    .container {
+        max-width: 720px;
+        padding: 0 20px;
+    }
+
+    .mt_100 {
+        margin-top: 70px;
+    }
+
+    .logo img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .profile img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/* Ноутбуки (992px и выше) */
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .menu__head {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        position: static;
+        width: auto;
+        background: transparent;
+        padding: 0;
+        gap: 25px;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+}
+
+/* Большие экраны (1200px и выше) */
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    .header {
+        padding: 25px 0;
+    }
+
+    nav {
+        gap: 30px;
+    }
+}
+
+/* Очень большие экраны (1440px и выше) */
+@media screen and (min-width: 1440px) {
+    .h2__title {
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+    }
+
+    .container {
+        max-width: 1440px;
+    }
+
+    .mt_100 {
+        margin-top: 100px;
+    }
+
+    .logo img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile img {
+        width: 35px;
+        height: 35px;
+    }
+}

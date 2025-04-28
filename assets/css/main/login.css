@@ -1,0 +1,23 @@
+
+    .avtor__btn__2 {
+        color: rgb(255, 255, 255);
+        padding: 7px 32px;
+        font-size: 24px;
+        background-color: #000000;
+        border-radius: 5px;
+        font-weight: 700;
+        border: 2px solid white;
+        margin-bottom: 30px;
+    }
+    
+    .reg__btn__2 {
+        font-weight: 700;
+        font-size: 24px;
+        padding: 7px 10px;
+        background-color: rgb(255, 255, 255);
+        border: 2px solid white;
+        color: rgb(0, 0, 0);
+        border-radius: 5px;
+        margin-bottom: 30px;
+        box-shadow: 0 0 10px 1px white;
+    }
